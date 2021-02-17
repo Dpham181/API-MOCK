@@ -6,6 +6,27 @@
 
 
   ],
+  "Groups":[ 
+    {"name":"Group1","organized":"grad"},
+    {"name":"Group2","organized":"ungrad"},
+    {"name":"Group3","organized":"ungrad"},
+    {"name":"Group4","organized":"grad"}
+
+    ],
+  "Projects":[
+    {"name":"project1","description":"build rest api 1","deadline":"01/22/2021", "size":5},
+        {"name":"project2","description":"build rest api 2","deadline":"01/23/2021", "size":5},
+    {"name":"project3","description":"build rest api 3","deadline":"01/24/2021", "size":5},
+    {"name":"project4","description":"build rest api 1","deadline":"01/22/2021", "size":5}
+
+  ],
+  "Members":[
+    {"groupName":"Group1","Useremail":"user1@gmail.com"},
+    {"groupName":"Group2","Useremail":"user1@gmail.com"},
+    {"groupName":"Group3","Useremail":"user3@gmail.com"},
+    {"groupName":"Group2","Useremail":"user2@gmail.com"}
+
+  ],
   "profile": {
     "name": "typicode"
   }
