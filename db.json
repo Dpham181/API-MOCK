@@ -1,9 +1,5 @@
 {
-  "Users": [
-    {"username":"user1", "password":"123456", "email":"user1@gmail.com"},
-        {"username":"user2", "password":"123456", "email":"user2@gmail.com"},
-        {"username":"user3", "password":"123456", "email":"user3@gmail.com"}
-  ],
+  
   "Groups":[ 
     {"name":"Group1","organized":"grad"},
     {"name":"Group2","organized":"ungrad"},
