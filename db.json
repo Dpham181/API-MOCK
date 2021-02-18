@@ -8,10 +8,10 @@
 
     ],
   "Projects":[
-    {"name":"project1","description":"build rest api 1","deadline":"01/22/2021", "size":5},
-        {"name":"project2","description":"build rest api 2","deadline":"01/23/2021", "size":5},
-    {"name":"project3","description":"build rest api 3","deadline":"01/24/2021", "size":5},
-    {"name":"project4","description":"build rest api 1","deadline":"01/22/2021", "size":5}
+    {"name":"project1","description":"build rest api 1","deadline":"01222021", "size":5},
+        {"name":"project2","description":"build rest api 2","deadline":"01232021", "size":5},
+    {"name":"project3","description":"build rest api 3","deadline":"01242021", "size":5},
+    {"name":"project4","description":"build rest api 1","deadline":"01222021", "size":5}
 
   ],
   "Members":[
