@@ -58,14 +58,18 @@
 
 7. open new terminal
 
-8. ./bin/PostUser.sh ./share/user.json  (for create new user)
+8. In the new terminal: 
+  * For posting using sh, we need to locate to root folder 
+  1. ./bin/PostUser.sh ./share/user.json  (for create new user)
 
-9. ./bin/PostFollow.sh   ./share/follow.json (for create new follow)
+  2. ./bin/PostFollow.sh   ./share/follow.json (for create new follow)
+  3.  ./bin/PostTweet.sh ./share/tweet.json (for posting a new tweet) 
 
-10. ./bin/PostTweet.sh ./share/tweet.json (for posting a new tweet) 
+  * For execution in the termail commnad line, so you just need to copy/paste or typing:
+  1.  http --verbose http://localhost:5100/users/test1/auth/123 (authenticate a user)
 
-11. http --verbose http://localhost:5100/users/test1/auth/123 (authenticate a user)
-
-12. http --verbose DELETE http://localhost:5100/users/test2/remove_follower/test3
+  2. http --verbose DELETE http://localhost:5100/users/test2/remove_follower/test3
  (user one remove follower user 3)
-13. 
+ 
+ 
+
