@@ -14,11 +14,11 @@
 
 ### Relational Database Creation:
 
-####Create three Enity: Users, Follow, and Post (DDL file located share folder called project2.sql) with including the mock datas. 
+* Create three Enity: Users, Follow, and Post (DDL file located share folder called project2.sql) with including the mock datas. 
 
 ### Json file create for requesting in post method: 
 
-####Create json-file: follow, tweet, and user (files located share folder called follow.json, tweet.json, and user.json)
+* Create json-file: follow, tweet, and user (files located share folder called follow.json, tweet.json, and user.json)
 
 ### SH files (located bin folder): 
 
