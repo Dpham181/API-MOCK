@@ -65,7 +65,7 @@
       -  ./bin/PostFollow.sh   ./share/follow.json (for create new follow)
       -  ./bin/PostTweet.sh ./share/tweet.json (for posting a new tweet) 
 
-  * For execution direct with commnad line, so you just need to copy/paste or typing:
+  * For execution directly with commnad line, so you just need to copy/paste or typing:
     -   http --verbose http://localhost:5100/users/test1/auth/123 (authenticate a user)
 
     -   http --verbose DELETE http://localhost:5100/users/test2/remove_follower/test3
