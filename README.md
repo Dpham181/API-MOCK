@@ -1,16 +1,16 @@
 # CPSC 449 - Web Back-End Engineering 
 ## Project 2 
-### Spring 2021 due March 12 (Section 02)
+## Spring 2021 due March 12 (Section 02)
 
 
-## We plan to build a microblogging service similar to Twitter
+# We plan to build a microblogging service similar to Twitter
 #### Messages are aggregated into timelines. There are three different timelines:
     1.Each user has a user timeline consisting of the posts that they have made.
     2.Each user has a home timeline consisting of recent posts by all users that this user follows.
     3.There is a public timeline consisting of all posts from all users.
     4.Timelines are organized in reverse chronological order. When timelines are retrieved through the web service, they should be limited to 25.
 
-## Project design 
+# Project design 
 
 ### Relational Database Creation:
 
@@ -42,7 +42,7 @@
 1.  http://localhost:5000/ (api initial)
 2.  http://localhost:5100/ (Users service)
 3.  http://localhost:5200/ (Timelines service)
-## Project exe commandline:
+# Project exe commandline:
 
 1. sudo apt update
 
