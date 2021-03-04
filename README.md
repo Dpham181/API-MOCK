@@ -4,7 +4,7 @@
 
 
 ## We plan to build a microblogging service similar to Twitter
-* Messages are aggregated into timelines. There are three different timelines:
+#### Messages are aggregated into timelines. There are three different timelines:
     1.Each user has a user timeline consisting of the posts that they have made.
     2.Each user has a home timeline consisting of recent posts by all users that this user follows.
     3.There is a public timeline consisting of all posts from all users.
