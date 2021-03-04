@@ -60,10 +60,10 @@
 
 8. In the new terminal: 
   * For posting using sh, we need to locate to root folder then typing the following command: 
-  -  ./bin/PostUser.sh ./share/user.json  (for create new user)
+      -  ./bin/PostUser.sh ./share/user.json  (for create new user)
 
-  -  ./bin/PostFollow.sh   ./share/follow.json (for create new follow)
-  -  ./bin/PostTweet.sh ./share/tweet.json (for posting a new tweet) 
+      -  ./bin/PostFollow.sh   ./share/follow.json (for create new follow)
+      -  ./bin/PostTweet.sh ./share/tweet.json (for posting a new tweet) 
 
   * For execution in the termail commnad line, so you just need to copy/paste or typing:
     -   http --verbose http://localhost:5100/users/test1/auth/123 (authenticate a user)
