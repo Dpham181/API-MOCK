@@ -87,7 +87,7 @@
       ###### http --verbose http://localhost:5200/users/test1/Following/Posts
        
        
-       #### POST Tweet 
-       ##### http --verbose POST localhost:5200/users/<username>/Posts/ {json data}
-       ###### http --verbose POST localhost:5200/users/test1/Posts/ Text=test
+      #### POST Tweet 
+      ##### http --verbose POST localhost:5200/users/<username>/Posts/ {json data}
+      ###### http --verbose POST localhost:5200/users/test1/Posts/ Text=test
        
