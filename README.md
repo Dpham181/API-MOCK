@@ -54,37 +54,37 @@
 
 8. In the new termail. Now we can use Httpie command in-order to execute all the fucntions requirement
 
-	#### Create new user 
-	##### http --verbose POST localhost:5100/users/ {json data}
-	###### http --verbose POST localhost:5100/users/ UserName="test4" PassWord="123" Email="test4@gmail.com"
+      #### Create new user 
+      ##### http --verbose POST localhost:5100/users/ {json data}
+      ###### http --verbose POST localhost:5100/users/ UserName="test4" PassWord="123" Email="test4@gmail.com"
 
 
- 	#### Authenticate user 
-	##### http --verbose POST localhost:5100/users/<username>/auth {json data}
-	###### http --verbose http://localhost:5100/users/test4/auth  PassWord="123"
+      #### Authenticate user 
+      ##### http --verbose POST localhost:5100/users/<username>/auth {json data}
+      ###### http --verbose http://localhost:5100/users/test4/auth  PassWord="123"
 
 
 	
-	#### User follow 
-	##### http --verbose POST localhost:5100/users/<username>/add_follow/ {json data}
-	###### http --verbose POST localhost:5100/users/test4/add_follow/ FOLLOWER="test4" FOLLOWING="test1"
+      #### User follow 
+      ##### http --verbose POST localhost:5100/users/<username>/add_follow/ {json data}
+      ###### http --verbose POST localhost:5100/users/test4/add_follow/ FOLLOWER="test4" FOLLOWING="test1"
        
-       #### User follow 
-       ##### http --verbose DELETE localhost:5100/users/<username>/remove_follower/ {json data}
-       ###### http --verbose DELETE http://localhost:5100/users/test4/remove_follower/ FOLLOWING=test1
+      #### User follow 
+      ##### http --verbose DELETE localhost:5100/users/<username>/remove_follower/ {json data}
+      ###### http --verbose DELETE http://localhost:5100/users/test4/remove_follower/ FOLLOWING=test1
        
-       #### User timelines (desc limit 25 )
-       ##### http --verbose http://localhost:5200/users/<username>/Posts {json data}
-       ###### http --verbose http://localhost:5200/users/test1/Posts
+      #### User timelines (desc limit 25 )
+      ##### http --verbose http://localhost:5200/users/<username>/Posts {json data}
+      ###### http --verbose http://localhost:5200/users/test1/Posts
        
-       #### Public timelines  (desc limit 25)
-       ##### http --verbose http://localhost:5200/Posts 
-       ###### http --verbose http://localhost:5200/Posts
+      #### Public timelines  (desc limit 25)
+      ##### http --verbose http://localhost:5200/Posts 
+      ###### http --verbose http://localhost:5200/Posts
        
        
-       #### Home timelines   (desc limit 25)
-       ##### http --verbose http://localhost:5200/users/<username>/Following/Posts
-       ###### http --verbose http://localhost:5200/users/test1/Following/Posts
+      #### Home timelines   (desc limit 25)
+      ##### http --verbose http://localhost:5200/users/<username>/Following/Posts
+      ###### http --verbose http://localhost:5200/users/test1/Following/Posts
        
        
        #### POST Tweet 
