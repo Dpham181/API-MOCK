@@ -16,16 +16,10 @@
 
 * Create three Enity: Users, Follow, and Post (DDL file located share folder called project2.sql) with including the mock datas. 
 
-### Json file create for requesting in post method: 
-
-* Create json-file: follow, tweet, and user (files located share folder called follow.json, tweet.json, and user.json)
 
 ### SH files (located bin folder): 
 
-1. init.sh (exeute ddl file )
-2. PostFollow.sh (post a new follow )
-3. PostTweet.sh (post a new tweet)
-4. PostUser.sh (post a new user) 
+1. init.sh (exe ddl file )
 
 
 ### services file .py (located in root folder)
@@ -52,28 +46,48 @@
 
 4. cd Danh_sProject2
 
-5. /bin/init.sh (initial the database for sqlite)
+5. ./bin/init.sh (initial the database for sqlite note if it required permission then use chmod +x init.sh) 
 
 6. foreman start ( runinng all the services)
 
 7. open new terminal
 
-8. In the new terminal: 
-  * For posting using sh, we need to locate to root folder then typing the following command: 
-      -  ./bin/PostUser.sh ./share/user.json  (for create new user)
+8. In the new termail. Now we can use Httpie command in-order to execute all the fucntions requirement
 
-      -  ./bin/PostFollow.sh   ./share/follow.json (for create new follow)
-      -  ./bin/PostTweet.sh ./share/tweet.json (for posting a new tweet) 
+	#### Create new user 
+	##### http --verbose POST localhost:5100/users/ {json data}
+	###### http --verbose POST localhost:5100/users/ UserName="test4" PassWord="123" Email="test4@gmail.com"
 
-  * For execution directly with commnad line, so you just need to copy/paste or typing:
-    -   http --verbose http://localhost:5100/users/test1/auth/123 (authenticate a user)
 
-    -   http --verbose DELETE http://localhost:5100/users/test2/remove_follower/test3
- (user one remove follower user 3)
- 
-    -   http --verbose http://localhost:5200/users/test2/Posts (get user timelines )
-    -   http --verbose http://localhost:5200/Posts (get public timelines)
-    -   http --verbose http://localhost:5200/users/test2/Following/Posts (get home timelines)
- 
- 
+ 	#### Authenticate user 
+	##### http --verbose POST localhost:5100/users/<username>/auth {json data}
+	###### http --verbose http://localhost:5100/users/test4/auth  PassWord="123"
 
+
+	
+	#### User follow 
+	##### http --verbose POST localhost:5100/users/<username>/add_follow/ {json data}
+	###### http --verbose POST localhost:5100/users/test4/add_follow/ FOLLOWER="test4" FOLLOWING="test1"
+       
+       #### User follow 
+       ##### http --verbose DELETE localhost:5100/users/<username>/remove_follower/ {json data}
+       ###### http --verbose DELETE http://localhost:5100/users/test4/remove_follower/ FOLLOWING=test1
+       
+       #### User timelines (desc limit 25 )
+       ##### http --verbose http://localhost:5200/users/<username>/Posts {json data}
+       ###### http --verbose http://localhost:5200/users/test1/Posts
+       
+       #### Public timelines  (desc limit 25)
+       ##### http --verbose http://localhost:5200/Posts 
+       ###### http --verbose http://localhost:5200/Posts
+       
+       
+       #### Home timelines   (desc limit 25)
+       ##### http --verbose http://localhost:5200/users/<username>/Following/Posts
+       ###### http --verbose http://localhost:5200/users/test1/Following/Posts
+       
+       
+       #### POST Tweet 
+       ##### http --verbose POST localhost:5200/users/<username>/Posts/ {json data}
+       ###### http --verbose POST localhost:5200/users/test1/Posts/ Text=test
+       
