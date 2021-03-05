@@ -60,17 +60,17 @@
 
 
       #### Authenticate user 
-      ##### http --verbose POST localhost:5100/users/<username>/auth {json data}
-      ###### http --verbose http://localhost:5100/users/test4/auth  PassWord="123"
+      ##### http --verbose POST http://localhost:5100/users/<username>/auth {json data}
+      ###### http --verbose POST  http://localhost:5100/users/test4/auth  PassWord="123"
 
 
 	
       #### User follow 
-      ##### http --verbose POST localhost:5100/users/<username>/add_follow/ {json data}
-      ###### http --verbose POST localhost:5100/users/test4/add_follow/ FOLLOWER="test4" FOLLOWING="test1"
+      ##### http --verbose POST http://localhost:5100/users/<username>/add_follow/ {json data}
+      ###### http --verbose POST http://localhost:5100/users/test4/add_follow/ FOLLOWER="test4" FOLLOWING="test1"
        
       #### User follow 
-      ##### http --verbose DELETE localhost:5100/users/<username>/remove_follower/ {json data}
+      ##### http --verbose DELETE http://localhost:5100/users/<username>/remove_follower/ {json data}
       ###### http --verbose DELETE http://localhost:5100/users/test4/remove_follower/ FOLLOWING=test1
        
       #### User timelines (desc limit 25 )
@@ -88,6 +88,6 @@
        
        
       #### POST Tweet 
-      ##### http --verbose POST localhost:5200/users/<username>/Posts/ {json data}
-      ###### http --verbose POST localhost:5200/users/test1/Posts/ Text=test
+      ##### http --verbose POST http://localhost:5200/users/<username>/Posts/ {json data}
+      ###### http --verbose POST http://localhost:5200/users/test1/Posts/ Text=test
        
