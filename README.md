@@ -55,8 +55,8 @@
 8. In the new termail. Now we can use Httpie command in-order to execute all the fucntions requirement
 
       #### Create new user 
-      ##### http --verbose POST localhost:5100/users/ {json data}
-      ###### http --verbose POST localhost:5100/users/ UserName="test4" PassWord="123" Email="test4@gmail.com"
+      ##### http --verbose POST http://localhost:5100/users/ {json data}
+      ###### http --verbose POST http://localhost:5100/users/ UserName="test4" PassWord="123" Email="test4@gmail.com"
 
 
       #### Authenticate user 
