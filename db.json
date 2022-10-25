@@ -3,7 +3,7 @@
    "Employess":[ 
     {"_Firstname":"Tom","_Lastname":"Grant", "_Salary":100000,"_Department":"Sale" },
     {"_Firstname":"Jeniffer","_Lastname":"Jones", "_Salary":100000,"_Department":"IT" },
-    {"_Firstname":"Marie","_Lastname":"Roberts", "_Salary":100000,"_Department":"HR" }
+    {"_Firstname":"Marie","_Lastname":"Roberts", "_Salary":100000,"_Department":"HR" },
     {"_Firstname":"James","_Lastname":"Hopkins", "_Salary":100000,"_Department":"IT" }
 
     ],
