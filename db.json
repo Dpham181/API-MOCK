@@ -1,37 +1,12 @@
 {
   
-  "Groups":[ 
-    {"name":"Group1","organized":"grad"},
-    {"name":"Group2","organized":"ungrad"},
-    {"name":"Group3","organized":"ungrad"},
-    {"name":"Group4","organized":"grad"}
-
-    ],
    "Employess":[ 
+    {"_Firstname":"danh","_Lastname":"pham", "_Salary":100000,"_Department":"IT" },
+    {"_Firstname":"danh","_Lastname":"pham", "_Salary":100000,"_Department":"IT" },
     {"_Firstname":"danh","_Lastname":"pham", "_Salary":100000,"_Department":"IT" }
 
     ],
-  "Projects":[
-    {"name":"project1","description":"build rest api 1","deadline":"2021-01-16", "size":5},
-        {"id":"1", "name":"project1","description":"build rest api 1","deadline":"2021-01-16", "size":5},
-
-        {"name":"project2","description":"build rest api 2","deadline":"2021-01-20", "size":5},
-    {"name":"project3","description":"build rest api 3","deadline":"2021-01-18", "size":5},
-    {"name":"project4","description":"build rest api 1","deadline":"2021-01-17", "size":5}
-
-  ],
-  "Members":[
-    {"groupName":"Group1","Useremail":"user1@gmail.com"},
-    {"groupName":"Group2","Useremail":"user1@gmail.com"},
-    {"groupName":"Group3","Useremail":"user3@gmail.com"},
-    {"groupName":"Group2","Useremail":"user2@gmail.com"}
-
-  ],
-  "Users" : [
-    {"id":"1", "username":"user1","password":"123456","email":"user1@gmail.com"},
-      {"id":"2","username":"user2","password":"123456","email":"user2@gmail.com"},
-      {"id":"3","username":"user3","password":"123456","email":"user3@gmail.com"}
-    ],
+ 
   "profile": {
     "name": "typicode"
   }
