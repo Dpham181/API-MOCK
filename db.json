@@ -7,8 +7,8 @@
     {"name":"Group4","organized":"grad"}
 
     ],
-   "employess":[ 
-    {"_Firstname":"danh","_Lastname":"pham", "_Salary":100000,"_Department":"IT" },
+   "Employess":[ 
+    {"_Firstname":"danh","_Lastname":"pham", "_Salary":100000,"_Department":"IT" }
 
     ],
   "Projects":[
