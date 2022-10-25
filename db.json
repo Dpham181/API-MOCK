@@ -7,6 +7,10 @@
     {"name":"Group4","organized":"grad"}
 
     ],
+   "employess":[ 
+    {"_Firstname":"danh","_Lastname":"pham", "_Salary":100000,"_Department":"IT" },
+
+    ],
   "Projects":[
     {"name":"project1","description":"build rest api 1","deadline":"2021-01-16", "size":5},
         {"id":"1", "name":"project1","description":"build rest api 1","deadline":"2021-01-16", "size":5},
